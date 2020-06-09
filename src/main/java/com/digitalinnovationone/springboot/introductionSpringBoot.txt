@@ -1,0 +1,78 @@
+Problemas do Spring
+
+Fazer configuração manual, container, dependencias do spring data, configuração de beans via arquivos.xml
+
+Spring Boot
+
+Criado pela Spring Source em 2012. Facilita o setup de projetos de spring.
+Ao adicionar uma dependência ele já configura para nós. Entregar mais valor ao cliente.
+
+Spring Boot
+Em cima de todos os projetos, resolve problemas de produtividade.
+Ferramenta Spring initializer
+Maven Project or Gradle
+Starters: dependências auto configuráveis pelo Spring Boot.
+Execução simplificada: sem deploy em servidor externo.
+Configuração: arquivo externo para configuração -> application.properties
+Valor: maior tempo em desenvolvimento! entregar mais e em menos tempo.
+
+Exercício:
+* Criação do projeto no site: http://start.spring.io
+
+Group
+com.digitalinnovationone
+
+Artifact
+springboot
+
+* Importar o projeto na IDE.
+
+File > Open > arquivo_descompactado
+
+* Adicionar classe HelloController e o método hello().
+
+* Executar o projeto através do terminal.
+
+executar o projeto através da pasta raiz->mvn spring-boot:run
+-----------------------------------------------------------------------------------------------------------------------------------------
+Auto Configuration
+
+Tínhamos que configurar o servlet na mão, tínhamos múltiplos arquivos XML.
+Configuração manual do Spring MVC: Dispatcher Servlet, web.xml, spring-mvc.xml.
+Configuração manual dos beans Spring.
+Aplicado também ao Spring Ddata, Spring Security, etc.
+
+spring boot starter data jpa
+              -
+    spring boot starter -> spring boot autoconfigure
+              -
+         spring boot
+
+classe configuração deve ser anotada com a anotação @Configuration
+
+Exercícios:
+* Adicionar propriedade debug=true no app.properties
+
+* Executar projeto no temrinal e analisar o log.
+mvn spring-boot:run
+
+* Identificar e visualizar o auto configuration do spring mvc.
+ WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet'
+          (OnClassCondition)
+@ConditionalOnClass -> DispatcherServlet -> acha o dispatcher, detecta a classe e faz a auto configuração.
+External Libraries > Maven: org.springframewrok.boot:spring-boot-autoconfigure > .jar > .autoconfigure
+> web > servlet > webMvcAutoConfiguration
+
+* Visualizar a dependência do auto configuration no projeto.
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Antes do Spring Boot
+
+° Spring tradicional: war precisa de servidor de aplicação.
+° Dependência de um container web ou servidor de aplicação.
