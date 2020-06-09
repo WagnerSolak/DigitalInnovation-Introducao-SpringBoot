@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.digitalinnovationone.springboot.SpringbootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.146 s - in com.digitalinnovationone.springboot.SpringbootApplicationTests

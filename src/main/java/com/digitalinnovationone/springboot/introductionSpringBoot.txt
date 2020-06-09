@@ -74,5 +74,88 @@ External Libraries > Maven: org.springframewrok.boot:spring-boot-autoconfigure >
 ----------------------------------------------------------------------------------------------------------------------------------------
 Antes do Spring Boot
 
-° Spring tradicional: war precisa de servidor de aplicação.
-° Dependência de um container web ou servidor de aplicação.
+° Spring tradicional: war precisa de servidor de aplicação;
+° Dependência de um container web ou servidor de aplicação;
+° Complexidade para configurações;
+° Atualizações frequentes, junto com versão do projeto; (atualização maq linux, windows)
+° Gerancimento manual de configurações; (dispatcher servlet, arquivos de configurações de servidores)
+
+FatJar / UberJar
+
+Vantagens:
+
+° Artefato do projeto pronto para execução;
+° Container web embutido na geração e execução (Tomcat)
+° Deploy embarcado com outros containers são opcionais. (Jet/Undertow)
+
+{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}
+{===================================}
+{= App <----------------- Skinny   =}
+{= App Dependencies <---- Thin     =}
+{===================================}
+{=       --------------- Fat/Uber  =}
+{===================================}
+{=  App Runtime <--------- Hollow  =}
+{===================================}
+{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}
+
+Artefato pronto para execução:
+
+° Execução direta através de um único java-jar
+
+mvn package && java -jar target/spring-boot-example-0.1.0.jar
+
+° Podemos também gerar o war tradicional
+
+Create a war file
+
+Exercícios:
+
+° Fazer o build do projeto.
+1) Gerar o artefato com package
+mvn clean -> para fazer limpeza do nosso projeto (faz todo empacotamento e ageração do nosso artefato)
+cd target/ (para entrar na pasta target)
+ll (listar conteúdo) mostra o arquivo: nomeJar (não consegui listar com comando ll)
+java -jar nomeArquivo.jar (subir a aplicação spring boot) target/spring-boot-example-0.1.0.jar
+
+° Explorar conteúdo do arquivo .jar gerado. (ver as embarcações dentro dele)
+dentro da pasta target executar:
+jar tf nomeJar | less
+Mostra todas as dependências, classes controlodaoras, autoConfiguration, log, etc
+
+° executar o projeto no terminal com java-jar.
+
+° Trocar o formato do artefato para .war e executar no Tomcat.
+ir no pom.xml e alterar para a configuração:
+    <packaging>war</packaging>
+ir no terminal e digitar mvn clean package
+C:\Users\wagne\OneDrive\Documentos\Cursos\digitalinnovation.one\introductions-spring\springboot\target\springboot-0.0.1-SNAPSHOT.war
+
+Mover o conteúdo gerado com springboot.war para dentro do apache:
+mv target/springboot.war apache-tomcat-9.0.26/webapps (versão que mostra no lista pasta target)(para dentro da pastas webapps
+
+listagem conteudo do web apps
+ll apache-tomcat-9.0.26/webapps 9verá o arquivo .war)
+
+Subir tomcat e deixar pronto para execução:
+entrar na pasta tomcat:
+cd apache-tomcat-9.0.26/
+ll
+cd bin (pasta responsável pela execução)
+startup.sh
+
+agora desta forma conseguimos tb acessar o host através do endereço:
+
+localhost:8080/springboot/
+
+Referências:
+
+https://dzone.com/articles/spring-boot-framework-tutorials
+
+https://www.javaavancado.com/o-que-e-spring-boot/
+
+https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.html
+
+https://docs.spring.io/spring-boot/docs/2.2.0.M5/reference/html/spring-boot-features.html
+
+
