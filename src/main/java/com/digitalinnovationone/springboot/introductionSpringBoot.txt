@@ -193,7 +193,7 @@ mvn spring-boot:run
 Ao subir a aplicação a mensagem aparecerá abaixo:
 2020-06-10 11:15:46.238  INFO 46816 --- [main] c.d.springboot.SpringbootApplication:The following profiles are active: dev
 
-Mensagem esperada no brownser:
+Mensagem esperada no browser:
 This is property file fo the Spring Boot Configuration Project specific to DEV Environment
 
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -224,4 +224,29 @@ spring.application.name=SameApp
 mvn spring-boot:run -Dserver.port=8085 -> argumento (-D) passando propriedades coo argumento por command line
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+Variáveis de ambiente
 
+° Variável de ambiente pode ser injetada através da anotação @Value no projeto
+
+° Linux e Mac: export comum de variável.
+export ENV_DB_URL=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+
+° Windows:
+set ENV_DB_URL=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+
+
+° Injeção com anotação @Value({NOME_VARIAVEL}).
+
+° Definição de valor default quando não há variável.
+
+
+Exercício
+-> Criar método para chamada do novo método e exibir o valor.
+Configurado uma variável string com anotação @Value em AppController
+Criado método mapeado para o contexto /envVariable
+no terminal: set ENV_DB_URL=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+no temrinal: mvn spring-boot:run
+Resultado no browser esperado:
+A seguinte variável de ambiente foi passada: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+
+-> Executar projeto no terminal e exibir no browser.

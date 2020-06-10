@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d87a1480-1a72-4980-829b-c1e418df495e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/controller/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/introductionSpringBoot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/introductionSpringBoot.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
