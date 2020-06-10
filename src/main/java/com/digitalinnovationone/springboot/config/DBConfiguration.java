@@ -18,7 +18,7 @@ public class DBConfiguration {
     private String password;
 
     // fazer o mapeamento das propriedades para dentro do sistema
-    @Profile("dev") // pegar todas as prop de configuração
+    @Profile("dev") // pegar todas as prop de configuração. Injeta um profile de um ambiente na criação de um Bean
     @Bean // instanciar o método como Bean para mostrar tudo conteúdo sendo mapeado na "subida" do sistema
     public String testDatabaseConnection(){
         System.out.println("DB connection for DEV-H2");
