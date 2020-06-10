@@ -158,4 +158,39 @@ https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.html
 
 https://docs.spring.io/spring-boot/docs/2.2.0.M5/reference/html/spring-boot-features.html
 
+----------------------------------------------------------------------------------------------------------------------------------------
+Importância do uso de Profiles.
 
+Ambientes para desenvolvimento, teste e produção.
+
+Local Development -> Development -> Staging -> Production
+
+Banco de dados para cada ambiente.
+Execução de testes unitários em ambiente local.
+Suíte de teste completas em ambientes de teste.
+Deploy simplificada em produção.
+
+
+Configurações com arquivos properties.
+
+° Configurações próprias para cada ambiente.
+
+° Ambientes com sua configuração: dev, production.
+main> java > resources
+application.properties
+application-dev.properties
+application-release.properties
+
+Parte 2: Configurações com Properties
+ Configurado application-prod
+ Configurado application-dev a propriedade spring.application.name que toda vez que subir a aplicação será exibida e mensagem contida
+ nesta prop.
+spring.profiles.active=dev: indica qual é o profile ativo que queremos subir
+
+No terminal digite:
+mvn spring-boot:run
+Ao subir a aplicação a mensagem aparecerá abaixo:
+2020-06-10 11:15:46.238  INFO 46816 --- [main] c.d.springboot.SpringbootApplication:The following profiles are active: dev
+
+Mensagem esperada no brownser:
+This is property file fo the Spring Boot Configuration Project specific to DEV Environment

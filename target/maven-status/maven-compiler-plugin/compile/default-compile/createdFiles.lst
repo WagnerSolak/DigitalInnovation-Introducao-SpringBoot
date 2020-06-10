@@ -1,2 +1,4 @@
 com\digitalinnovationone\springboot\SpringbootApplication.class
 com\digitalinnovationone\springboot\controller\HelloController.class
+com\digitalinnovationone\springboot\config\DBConfiguration.class
+com\digitalinnovationone\springboot\controller\AppController.class

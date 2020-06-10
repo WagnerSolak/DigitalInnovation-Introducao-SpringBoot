@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d87a1480-1a72-4980-829b-c1e418df495e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/introductionSpringBoot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digitalinnovationone/springboot/introductionSpringBoot.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digitalinnovationone/springboot/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digitalinnovationone/springboot/controller/HelloController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wagne\OneDrive\Documentos\Cursos\digitalinnovation.one\introductions-spring\springboot\src\main\resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="SpringbootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -82,25 +92,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1350" height="197" key="GridCell.Tab.0.bottom" timestamp="1591474081708">
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom" timestamp="1591798800612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1350" height="197" key="GridCell.Tab.0.bottom/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591468943423" />
+    <state width="1367" height="199" key="GridCell.Tab.0.bottom/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591798800612" />
     <state width="1350" height="197" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591474081708" />
-    <state width="1350" height="197" key="GridCell.Tab.0.center" timestamp="1591474081708">
+    <state width="1367" height="199" key="GridCell.Tab.0.center" timestamp="1591798800612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1350" height="197" key="GridCell.Tab.0.center/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591468943422" />
+    <state width="1367" height="199" key="GridCell.Tab.0.center/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591798800612" />
     <state width="1350" height="197" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1591474081708" />
-    <state width="1350" height="197" key="GridCell.Tab.0.left" timestamp="1591474081708">
+    <state width="1367" height="199" key="GridCell.Tab.0.left" timestamp="1591798800612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1350" height="197" key="GridCell.Tab.0.left/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591468943422" />
+    <state width="1367" height="199" key="GridCell.Tab.0.left/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591798800612" />
     <state width="1350" height="197" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1591474081708" />
-    <state width="1350" height="197" key="GridCell.Tab.0.right" timestamp="1591474081708">
+    <state width="1367" height="199" key="GridCell.Tab.0.right" timestamp="1591798800612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1350" height="197" key="GridCell.Tab.0.right/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591468943422" />
+    <state width="1367" height="199" key="GridCell.Tab.0.right/0.0.1366.768/-1360.0.1360.768@0.0.1366.768" timestamp="1591798800612" />
     <state width="1350" height="197" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1591474081708" />
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1591725054065">
       <screen x="0" y="0" width="1366" height="768" />
