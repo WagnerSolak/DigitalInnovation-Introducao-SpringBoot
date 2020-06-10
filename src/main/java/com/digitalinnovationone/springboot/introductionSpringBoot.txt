@@ -159,6 +159,7 @@ https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.html
 https://docs.spring.io/spring-boot/docs/2.2.0.M5/reference/html/spring-boot-features.html
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+Profiles
 Importância do uso de Profiles.
 
 Ambientes para desenvolvimento, teste e produção.
@@ -194,3 +195,33 @@ Ao subir a aplicação a mensagem aparecerá abaixo:
 
 Mensagem esperada no brownser:
 This is property file fo the Spring Boot Configuration Project specific to DEV Environment
+
+----------------------------------------------------------------------------------------------------------------------------------------
+YAML
+
+° Troca no formato de configurações: formato.YML.
+
+Podemos ter arquivo somente properties, somente YML ou misturados.
+
+Chave com valor encadeado.
+
+Exercício
+
+-> Migrar app.properties do profile dev para YML.
+-> Executar o projeto pelo terminal
+
+Configurações com command line (linha de comando)
+
+° Propriedades do arquivo de configuração na linha de comando
+
+° Sobrescreve as propriedades definidas no arquivo de configuração padrão.
+
+° Valores passados como argumento na execução do projeto.
+
+server.port=8081
+spring.application.name=SameApp
+
+mvn spring-boot:run -Dserver.port=8085 -> argumento (-D) passando propriedades coo argumento por command line
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
